@@ -177,10 +177,12 @@ img {
 
 .text-bigger {
     font-size: 4rem;
+    font-weight: 500;
 }
 
 .text-big {
     font-size: 2rem;
+    font-weight: 500;
 }
 
 .text-smaller {
@@ -200,4 +202,52 @@ img {
 
 .attribution a:hover {
     color: var(--yellow-500);
+}
+
+@media (max-width:375px) {
+    .main-container {
+        grid-template-columns: auto;
+        grid-template-rows: 20% 10% 25% 40% 30%;
+        grid-template-areas: 
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5"
+        "card-6"
+        "card-7"
+        "card-8";
+    }
+
+    .card-1 img {
+        padding-top: 25px;
+        width: 150px;
+    }
+
+    .card-2 img {
+        width: 250px;
+    }
+
+    .card-3 {
+        padding-bottom: 0px;
+    }
+    .card-3 img {
+        width: 175px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    .text-big {
+        font-size: 1rem;
+        line-height: 15px;
+    }
+
+    .text-bigger {
+        font-size: 2rem;
+        line-height: 30px;
+    }
+
+    .text-smaller {
+        font-size: 0.9rem;
+    }
 }
