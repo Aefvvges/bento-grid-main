@@ -202,7 +202,7 @@ img {
     color: var(--yellow-500);
 }
 
-@media (max-width:375px) {
+@media (max-width:500px) {
     .main-container {
         grid-template-columns: auto;
         grid-template-rows: 20% 10% 25% 40% 30%;
