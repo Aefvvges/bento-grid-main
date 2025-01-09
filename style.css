@@ -94,12 +94,10 @@ img {
     grid-area: card-3;
     background-color: var(--yellow-500);
     padding: 15px;
-
 }
 
 .card-3 img {
     width: 225px;
-    padding-left: 14px;
 }
 
 .card-4 {
@@ -231,15 +229,70 @@ img {
     .card-3 {
         padding-bottom: 0px;
     }
+
     .card-3 img {
         width: 175px;
         padding-left: 0px;
         padding-bottom: 0px;
+        padding-top: 10px;
+    }
+
+    .card-4 {
+        padding: 20px;
+    }
+
+    .card-4 img {
+        height: 200px;
+        padding: 20px 0px;
+    }
+
+    .card-4 p {
+        text-align: center;
+    }
+
+    .card-5 {
+        display: block;
+        padding-bottom: 0px;
+    }
+
+    .card-5 img {
+        padding-left: 25px;
+    }
+
+    .card-5 p {
+        font-size: 1.5rem;
+        padding: 20px 30px;
+        text-align: center;
+    }
+
+    .card-6 img {
+        width: 160px;
+    }
+
+    .card-7 {
+        padding: 20px;
+    }
+
+    .card-7 img {
+        padding-top: 20px;
+    }
+
+    .card-8 img {
+        padding: 0px;
+        padding-top: 10px;
+    }
+
+    .card-8 p {
+        padding: 0px;
+    }
+
+    .percent {
+        display: block;
     }
 
     .text-big {
-        font-size: 1rem;
-        line-height: 15px;
+        font-size: 1.2rem;
+        line-height: 20px;
     }
 
     .text-bigger {
@@ -247,7 +300,15 @@ img {
         line-height: 30px;
     }
 
+    .text-small {
+        font-size: 1rem;
+    }
+    
     .text-smaller {
         font-size: 0.9rem;
+    }
+
+    .attribution {
+        margin-left: 11%;
     }
 }
