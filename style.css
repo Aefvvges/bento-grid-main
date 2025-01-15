@@ -203,7 +203,7 @@ img {
 @media (max-width: 750px) {
     .main-container {
         grid-template-columns: auto;
-        grid-template-rows: 10% 10% 15% 25% 20% 15% 20% 20%;
+        grid-template-rows: 10% 10% 15% 25% 20% 15% 15% 15%;
         grid-template-areas: 
             "card-1"
             "card-2"
