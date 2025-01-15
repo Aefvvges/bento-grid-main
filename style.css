@@ -10,7 +10,6 @@
 @font-face {
     font-family: 'dm-sans';
     src: url(assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
-
 }
 
 @font-face {
@@ -21,7 +20,7 @@
 body {
     font-family: 'dm-sans';
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px converted to rem */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,27 +38,26 @@ span {
 
 img {
     height: auto;
-    width: 200px;
+    width: 12.5rem; /* 200px converted to rem */
 }
 
 .main-container {
     width: 85vw;
     display: grid;
-    gap: 15px;
-    margin: 30px auto;
+    gap: 0.9375rem; /* 15px converted to rem */
+    margin: 1.875rem auto; /* 30px converted to rem */
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 45vh 20vh 20vh;
     grid-template-areas: 
-    "card-7 card-1 card-1 card-4"
-
-    "card-7 card-2 card-3 card-4"
-    "card-8 card-2 card-3 card-4"
-    "card-8 card-6 card-5 card-5"
-    "card-8 card-6 card-5 card-5";
+        "card-7 card-1 card-1 card-4"
+        "card-7 card-2 card-3 card-4"
+        "card-8 card-2 card-3 card-4"
+        "card-8 card-6 card-5 card-5"
+        "card-8 card-6 card-5 card-5";
 }
 
 .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8 {
-    border-radius: 15px;
+    border-radius: 0.9375rem; /* 15px converted to rem */
     overflow: hidden;
 }
 
@@ -68,48 +66,48 @@ img {
     background-color: var(--purple-500);
     color: var(--white);
     text-align: center;
-    padding: 30px;
+    padding: 1.875rem; /* 30px converted to rem */
 }
 
 .card-1 img {
-    width: 175px;
+    width: 10.9375rem; /* 175px converted to rem */
     height: auto;
 }
 
 .card-2 {
     grid-area: card-2;
     background-color: var(--white);
-    padding: 15px;
+    padding: 0.9375rem; /* 15px converted to rem */
 }
 
 .card-2 img {
-    width: 375px;
+    width: 23.4375rem; /* 375px converted to rem */
 }
 
 .card-2 p {
-    padding-right: 40px;
+    padding-right: 2.5rem; /* 40px converted to rem */
 }
 
 .card-3 {
     grid-area: card-3;
     background-color: var(--yellow-500);
-    padding: 15px;
+    padding: 0.9375rem; /* 15px converted to rem */
 }
 
 .card-3 img {
-    width: 225px;
+    width: 14.0625rem; /* 225px converted to rem */
 }
 
 .card-4 {
     grid-area: card-4;
     background-color: var(--purple-100);
-    padding-bottom: 20px;
-    padding-top: 30px;
-    padding-left: 50px;
+    padding-bottom: 1.25rem; /* 20px converted to rem */
+    padding-top: 1.875rem; /* 30px converted to rem */
+    padding-left: 3.125rem; /* 50px converted to rem */
 }
 
 .card-4 img {
-    height: 300px;
+    height: 18.75rem; /* 300px converted to rem */
     width: auto;
 }
 
@@ -119,47 +117,47 @@ img {
     color: var(--white);
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 0.9375rem; /* 15px converted to rem */
 }
 
 .card-5 p {
-    padding: 30px;
-    padding-right: 0px;
+    padding: 1.875rem; /* 30px converted to rem */
+    padding-right: 0;
 }
 
 .card-6 {
     grid-area: card-6;
     background-color: var(--white);
-    padding: 15px;
+    padding: 0.9375rem; /* 15px converted to rem */
 }
 
 .card-6 img {
-    padding-top: 30px;
+    padding-top: 1.875rem; /* 30px converted to rem */
 }
 
 .card-7 {
     grid-area: card-7;
     background-color: var(--yellow-100);
-    padding: 70px 20px;
+    padding: 4.375rem 1.25rem; /* 70px 20px converted to rem */
 }
 
 .card-8 {
     grid-area: card-8;
     background-color: var(--yellow-500);
-    padding: 20px;
+    padding: 1.25rem; /* 20px converted to rem */
 }
 
 .card-8 p {
-    padding-right: 30px;
-    padding-bottom: 50px;
+    padding-right: 1.875rem; /* 30px converted to rem */
+    padding-bottom: 3.125rem; /* 50px converted to rem */
 }
 
 .card-8 img {
-    padding-left: 20px;
+    padding-left: 1.25rem; /* 20px converted to rem */
 }
 
 .purple-word {
-    color: var(--purple-500)
+    color: var(--purple-500);
 }
 
 .yellow-word {
@@ -170,7 +168,7 @@ img {
 .percent {
     font-size: 4rem;
     font-family: 'dm-sans';
-    padding-right: 25px;
+    padding-right: 1.5625rem; /* 25px converted to rem */
 }
 
 .text-bigger {
@@ -202,48 +200,48 @@ img {
     color: var(--yellow-500);
 }
 
-@media (max-width:750px) {
+@media (max-width: 750px) {
     .main-container {
         grid-template-columns: auto;
         grid-template-rows: 20% 10% 25% 40% 30%;
         grid-template-areas: 
-        "card-1"
-        "card-2"
-        "card-3"
-        "card-4"
-        "card-5"
-        "card-6"
-        "card-7"
-        "card-8";
+            "card-1"
+            "card-2"
+            "card-3"
+            "card-4"
+            "card-5"
+            "card-6"
+            "card-7"
+            "card-8";
     }
 
     .card-1 img {
-        padding-top: 25px;
-        width: 150px;
+        padding-top: 1.5625rem; /* 25px converted to rem */
+        width: 9.375rem; /* 150px converted to rem */
     }
 
     .card-2 img {
-        width: 250px;
+        width: 15.625rem; /* 250px converted to rem */
     }
 
     .card-3 {
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     .card-3 img {
-        width: 175px;
-        padding-left: 0px;
-        padding-bottom: 0px;
-        padding-top: 10px;
+        width: 10.9375rem; /* 175px converted to rem */
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 0.625rem; /* 10px converted to rem */
     }
 
     .card-4 {
-        padding: 20px;
+        padding: 1.25rem; /* 20px converted to rem */
     }
 
     .card-4 img {
-        height: 200px;
-        padding: 20px 0px;
+        height: 12.5rem; /* 200px converted to rem */
+        padding: 1.25rem 0; /* 20px converted to rem */
     }
 
     .card-4 p {
@@ -252,38 +250,38 @@ img {
 
     .card-5 {
         display: block;
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     .card-5 img {
-        padding-left: 25px;
+        padding-left: 1.5625rem; /* 25px converted to rem */
     }
 
     .card-5 p {
         font-size: 1.5rem;
-        padding: 20px 30px;
+        padding: 1.25rem 1.875rem; /* 20px 30px converted to rem */
         text-align: center;
     }
 
     .card-6 img {
-        width: 160px;
+        width: 10rem; /* 160px converted to rem */
     }
 
     .card-7 {
-        padding: 20px;
+        padding: 1.25rem; /* 20px converted to rem */
     }
 
     .card-7 img {
-        padding-top: 20px;
+        padding-top: 1.25rem; /* 20px converted to rem */
     }
 
     .card-8 img {
-        padding: 0px;
-        padding-top: 10px;
+        padding: 0;
+        padding-top: 0.625rem; /* 10px converted to rem */
     }
 
     .card-8 p {
-        padding: 0px;
+        padding: 0;
     }
 
     .percent {
@@ -292,12 +290,12 @@ img {
 
     .text-big {
         font-size: 1.2rem;
-        line-height: 20px;
+        line-height: 1.25rem; /* 20px converted to rem */
     }
 
     .text-bigger {
         font-size: 2rem;
-        line-height: 30px;
+        line-height: 1.875rem; /* 30px converted to rem */
     }
 
     .text-small {
