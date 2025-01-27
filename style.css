@@ -308,5 +308,7 @@ img {
 
     .attribution {
         margin-left: 11%;
+        position: absolute;
+        bottom: 0;
     }
 }
